@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Block and Inline-Block</title>
+        <style>
+            .textbx-name{
+                display:block;
+                margin-bottom:4px;
+            }
+            .textbx-email{
+                display:block;
+            }
+            .thanks{
+                width:200px;
+                display:inline-block;
+                vertical-align: middle;
+            }
+            .b1,
+            .b2{
+                display:inline-block;
+                vertical-align: middle;
+            }
+            .google_logo{
+                display:block;
+                width:300px;
+                align-items: center;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .google-search-textbox{
+                width:400px;
+                border:none;
+                padding-top: 10px;
+                padding-left: 12px;
+                padding-right: 16px;
+                padding-bottom: 10px;
+                display:block;
+                margin: 0 auto;
+                border-radius: 30px;
+                background-color: white;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                overflow: visible;
+                font-size: 16px;
+            }
+            .first-name,.second-name{
+                width:150px;
+                margin-bottom: 6px;
+                padding-top: 8px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-bottom: 8px;
+                border-radius: 10px;
+                border-width: 1px;
+            }
+            .email_box{
+                width:320px;
+                display:block;
+                padding-top: 8px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-bottom: 8px;
+                border-radius: 10px;
+                border-width: 1px;
+                margin-bottom: 6px;
+            }
+            .btn{
+                font-size: 16px;
+                height:40px;
+                width:336px;
+                background-color:blue;
+                color:white;
+                border:none;
+                border-radius:10px;
+            }
+            .uber_para{
+                font-family: Arial;
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+            .uber_pickup,
+            .uber_destination{
+                border:none;
+                border-radius: 10px;
+                background-color: rgb(240, 240, 240);
+                display:block;
+                width:250px;  
+                margin-bottom: 6px;
+                padding-top: 8px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-bottom: 8px;
+            }
+            .uber_destination{
+                margin-bottom: 35px;
+            }
+            .Uber_button{
+                background-color: black;
+                display:inline-block;
+                color:white;
+                border:none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 16px;
+                margin-right: 20px;
+            }
+            .Uber_schedule{
+                background-color: rgb(240,240,240);
+                border:none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="textbx-name" type="textbox" placeholder="Name">
+        <input class="textbx-email" type="Textbox" placeholder="Email">
+        <p class="thanks">
+            Thanks for chatting with our customer support. Would you like to take our quick survey?
+
+        </p>
+        <button class="b1">Yes</button>
+        <button class="b2">No</button>
+        <img src="images/google.png" alt="google-logo" class="google_logo">
+        <input type="textbox" class="google-search-textbox" placeholder="Search Google or Type a URL" >
+        <br>
+        <br>
+        <input type="textbox" placeholder="First name" class="first-name">
+        <input type="textbox" placeholder="last name" class="second-name">
+        <input type="textbox" placeholder="Email" class="email_box">
+        <button class="btn">Sign up</button>
+        <br>
+        <br>
+
+
+        <p class="uber_para">Request a ride now</p>
+        <input type="textbox" placeholder="Enter pickup location" class="uber_pickup">
+        <input type="textbox" placeholder="Enter destination" class="uber_destination">
+        <button class="Uber_button">Request now</button>
+        <button class="Uber_schedule">Schedule for later</button>
+    </body>
+</html>
