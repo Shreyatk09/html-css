@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height:60px;
+
+                width: 100%;
+                max-width: 100vw;
+                padding: 0 200px;
+                box-sizing: border-box;
+
+                align-items: center;
+                border-bottom-width: 2px;
+                border-bottom-style: solid;
+                border-bottom-color: rgba(128, 128, 128, 0.104);
+            }
+            .logo{
+                height:20px;
+                width:150px;
+                margin-top: 6px;
+                margin-left: 15px;
+                margin-right: 450px;
+            }
+            .menu-icon{
+                display:flex;
+                flex-direction: column;
+                width:20px;
+                height:18px;
+                cursor: pointer;
+                justify-content: space-between;
+
+                padding-left:25px;
+            }
+            .menu-icon div {
+                width:100%;
+                height:3px;
+                background-color: black;
+                border-radius: 3px;
+            }
+            .child{
+                padding-bottom :20px;
+                padding-left :20px;
+                padding-right : 20px;
+                padding-top : 20px;
+
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400px;
+                font-size: 15px;
+                color: grey;
+            }
+            .main_info{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;  
+                align-items: center;      
+                height: 100px;
+                width:100%;
+                margin-top: 80px;
+                margin-bottom: 165px;
+            }
+            .main_info h1{
+                margin-bottom: 2px;
+                padding-left: auto;
+                padding-right: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 520;
+                font-size: 46px;
+                color: rgba(0, 0, 0, 0.74);
+            }
+            .main_info p{
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgba(0, 0, 0, 0.37);
+                margin-top: 16px;
+            }
+            .ruppee_grid{
+                display:grid;
+                grid-template-columns: 400px 400px 400px;
+                column-gap: 20px;
+                justify-content: center;
+                align-items: center;
+                vertical-align: center;
+            }
+            .grid_rs{
+                display:inline-block;
+                height:800px;
+                justify-content: center;
+                align-items: center;
+                vertical-align: center;
+                text-align: center;
+
+            }
+            .ruppee{
+                height:240px;
+                width:250px;
+                margin-bottom: 20px;
+            }
+            .grid_rs h2{
+                font-size:28px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:28;
+                color:rgba(0, 0, 0, 0.697);
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+            .grid_rs p{
+                line-height: 1.7;
+
+                font-size:18px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <div>
+            <img src="https://zerodha.com/static/images/logo.svg" class="logo">
+        </div> 
+        <div class="child">
+            <p>Signup</p>
+        </div>
+        <div class="child">
+            <p>About</p>
+        </div>
+        <div class="child">
+            <p>Products</p>
+        </div>
+        <div class="child">
+            <p>Pricing</p>
+        </div>
+        <div class="child">
+            <p>Support</p>
+        </div>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </header>
+
+        <main>
+            <div class="main_info">
+                <h1>
+                    Charges
+                </h1>
+                <p>
+                    List of all charges and taxes
+                </p>
+            </div>
+
+            <div class="ruppee_grid">
+                <div class="grid_rs">
+                    <img src="https://zerodha.com/static/images/pricing-eq.svg" class="ruppee">
+                    <h2>Free equity delivery</h2>
+                    <p>
+                        All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.
+                    </p>
+                </div>
+                <div class="grid_rs">
+                    <img src="https://zerodha.com/static/images/other-trades.svg" class="ruppee">
+                    <h2>Intraday and F&O trades</h2>
+                    <p>
+                        Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.
+                    </p>
+                </div>
+                <div class="grid_rs">
+                    <img src="https://zerodha.com/static/images/pricing-eq.svg" class="ruppee">
+                    <h2>Free direct MF</h2>
+                    <p>
+                        All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
